@@ -16,8 +16,12 @@ class _DeviceControlScreenState extends State<DeviceControlScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Device Control'),
-        backgroundColor: Colors.indigo,
+        title: Center(
+            child: Text(
+          'Device Control',
+          style: TextStyle(color: Colors.white),
+        )),
+        backgroundColor: Colors.lightBlue,
       ),
       body: ListView.builder(
         itemCount: widget.devices.length,

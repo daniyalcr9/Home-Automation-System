@@ -24,11 +24,16 @@ class _AddDeviceScreenState extends State<AddDeviceScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Add New Device'),
-        backgroundColor: Colors.indigo.shade600,
+        title: Center(
+          child: Text(
+            'Add New Device',
+            style: TextStyle(color: Colors.white),
+          ),
+        ),
+        backgroundColor: Colors.lightBlue, // Light blue AppBar
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.fromLTRB(16, 280, 16, 100),
         child: Column(
           children: <Widget>[
             TextField(
@@ -46,13 +51,16 @@ class _AddDeviceScreenState extends State<AddDeviceScreen> {
             ElevatedButton(
               onPressed: _submitDevice,
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.indigo,
+                backgroundColor: Colors.lightBlue,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
                 padding: EdgeInsets.symmetric(vertical: 16, horizontal: 32),
               ),
-              child: Text('Add Device'),
+              child: Text(
+                'Add Device',
+                style: TextStyle(color: Colors.white),
+              ),
             ),
           ],
         ),

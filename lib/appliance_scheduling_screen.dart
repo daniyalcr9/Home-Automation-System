@@ -54,8 +54,12 @@ class _ApplianceSchedulingScreenState extends State<ApplianceSchedulingScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Appliance Scheduling'),
-        backgroundColor: Colors.indigo,
+        title: Center(
+            child: Text(
+          'Appliance Scheduling',
+          style: TextStyle(color: Colors.white),
+        )),
+        backgroundColor: Colors.lightBlue,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
