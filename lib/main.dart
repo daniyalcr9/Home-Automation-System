@@ -7,6 +7,7 @@ class SmartHomeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Smart Home Automation',
       theme: ThemeData(
         primarySwatch: Colors.indigo,
